@@ -90,32 +90,26 @@ int main() {
     switch (choice) {
         case 1:
             animal = new Elephant{Species::Elephant, 4354, 3.5, 54000, 45, 2.4, Continent::Africa};
-            animal->Move();
-            animal->Eat();
             break;
 
         case 2:
             animal = new Parrot{Species::Parrot, 1.2, 0.4, 10000000, 3, true, "green"};
-            animal->Move();
-            animal->Eat();
             break;
 
         case 3:
             animal = new Penguin{Species::Penguin, 25.0, 0.9, 1200000, 6, "black-white", Continent::Antarctica};
-            animal->Move();
-            animal->Eat();
             break;
 
         case 4:
             animal = new Shark{Species::Fish, 800.0, 4.2, 1500000, 12, 2500.0};
-            animal->Move();
-            animal->Eat();
             break;
 
         default:
             std::cout << "Invalid option.\n";
             break;
     }
+    animal->Move();
+    animal->Eat();
 
     delete animal;
     return 0;

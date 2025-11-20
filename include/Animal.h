@@ -28,7 +28,9 @@ enum class Species {
     Turtle,
     Snake,
     Frog,
-    Fish, Insect
+    Fish,
+    Insect,
+    Parrot
 };
 
 class Animal {
@@ -68,6 +70,7 @@ class Animal {
             case Species::Frog: return "Frog";
             case Species::Fish: return "Fish";
             case Species::Insect: return "Insect";
+            case Species::Parrot: return "Parrot";
             default: return "Unknown";
         }
     }

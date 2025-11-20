@@ -14,7 +14,9 @@ public:
     void Input();
 
     void Eat() const;
+
     void Move() const;
+
 };
 
 

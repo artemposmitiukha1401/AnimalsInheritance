@@ -2,7 +2,7 @@
 #define ANIMALSINHERITANCE_ELEPHANT_H
 #include "Animal.h"
 #include "Continent.h"
-class Elephant : Animal {
+class Elephant : public Animal {
     double trunk_length = 0;
     Continent continent = Continent::Africa;
     static std::string ContinentToStr(Continent continent);
